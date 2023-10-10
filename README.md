@@ -118,5 +118,48 @@ A `Map.Entry` represents an individual key/value pair.
 - `HashMap`: No order is guaranteed.
 - `LinkedHashMap`: Insertion order is preserved.
 - `TreeMap`: Elements are sorted by key.
+
+# Java Collections with Uniqueness Sets
+## HashSet
+
+`HashSet` is an implementation of the `Set` interface that uses a hash table to store elements. It offers constant-time complexity for basic operations like adding, removing, and checking for the presence of elements. However, it does not maintain the order of elements. It ensures uniqueness by using the hash code of elements.
+
+```java
+Set<String> hashSet = new HashSet<>();
+hashSet.add("Apple");
+hashSet.add("Banana");
+hashSet.add("Cherry");
+hashSet.add("Apple"); // Duplicate, will not be added
 ```
 
+## LinkedHashSet
+
+`LinkedHashSet` is another implementation of the `Set` interface that maintains the order of elements in which they were inserted. It combines a hash table with a linked list, ensuring that the elements are both unique and ordered.
+
+```java
+Set<String> linkedHashSet = new LinkedHashSet<>();
+linkedHashSet.add("Apple");
+linkedHashSet.add("Banana");
+linkedHashSet.add("Cherry");
+linkedHashSet.add("Apple"); // Duplicate, will not be added
+```
+
+## TreeSet
+
+`TreeSet` is a `SortedSet` implementation that stores elements in a sorted order based on their natural order or a custom comparator. Like other sets, it enforces uniqueness. Elements are automatically sorted when added to the set.
+
+```java
+Set<String> treeSet = new TreeSet<>();
+treeSet.add("Banana");
+treeSet.add("Cherry");
+treeSet.add("Apple");
+treeSet.add("Apple"); // Duplicate, will not be added
+```
+
+
+Java Collections Framework provides sets for managing collections of unique elements.
+HashSet provides constant-time performance for basic operations and does not maintain order.
+LinkedHashSet maintains the order of insertion while enforcing uniqueness.
+TreeSet maintains elements in sorted order, either naturally or using a custom comparator.
+Choose the appropriate set implementation based on your specific requirements for
+uniqueness and ordering when working with collections in Java.
