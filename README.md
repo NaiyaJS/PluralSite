@@ -120,5 +120,3 @@ A `Map.Entry` represents an individual key/value pair.
 - `TreeMap`: Elements are sorted by key.
 ```
 
-
-
