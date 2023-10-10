@@ -3,7 +3,7 @@
 # Java Collections - Lists and Maps
 
 ## Introduction
-Java Lists and Maps are part of the Java Collections Framework, which provides a set of classes and interfaces to work with collections of objects. In this README, we'll explore Lists and Maps, their interfaces, methods, and common operations.
+Java Lists and Maps are part of the Java Collections Framework, which provides a set of classes and interfaces to work with collections of objects.
 
 ### Collection Interface
 The `Collection` interface is the root interface for all collections in Java. To be considered a collection, certain methods must be implemented, including `add()`, `remove()`, `size()`, `contains()`, and more. Collections can be divided into two subgroups: Lists and Sets.
